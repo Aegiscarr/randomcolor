@@ -82,7 +82,7 @@ func GetRandomColorInRgb() RGBColor {
 // GetRandomColorInHex returns a random color in HEX format
 func GetRandomColorInHex() string {
 	color := GetRandomColorInRgb()
-	hex := "#" + getHex(color.Red) + getHex(color.Green) + getHex(color.Blue)
+	hex := "0x" + getHex(color.Red) + getHex(color.Green) + getHex(color.Blue)
 	return hex
 }
 
