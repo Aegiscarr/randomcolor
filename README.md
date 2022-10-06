@@ -8,7 +8,7 @@ Go package to generate random colors
 package main
 
 import (
-	"github.com/AvraamMavridis/randomcolor"
+	"github.com/Aegiscarr/randomcolor"
 )
 
 func main() {
