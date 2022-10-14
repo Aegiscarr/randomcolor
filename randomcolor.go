@@ -22,7 +22,7 @@ type HSVColor struct {
 }
 
 // GetHex Converts a decimal number to hex representations
-func getHex(num int) string {
+func GetHex(num int) string {
 	hex := fmt.Sprintf("%x", num)
 	if len(hex) == 1 {
 		hex = "0" + hex
@@ -30,7 +30,7 @@ func getHex(num int) string {
 	return hex
 }
 
-func rgpToHSV(color RGBColor) HSVColor {
+func RGBToHSV(color RGBColor) HSVColor {
 	max := math.Max(float64(color.Red), float64(color.Green))
 	max = math.Max(max, float64(color.Blue))
 	min := math.Min(float64(color.Red), float64(color.Green))
